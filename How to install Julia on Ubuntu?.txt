@@ -1,0 +1,24 @@
+How to install Julia on Ubuntu?
+Step 1:
+    Turn on terminal
+
+Step 2:
+Run the command
+   $ wget https://julialang-s3.julialang.org/bin/linux/x64/1.8/julia-1.8.0-linux-x86_64.tar.gz
+
+Step 3:
+Extract the .tar.gz by followning command
+   $ tar -xvzf julia-1.6.7-linux-x86_64.tar.gz
+
+Step 4:
+Create a folder /opt and copy extracted folder to the /opt folder
+   $ sudo cp -r julia-1.6.7 /opt/
+
+Step 5:
+create a symbolic link to julia inside the /usr/local/bin folder:
+   $ sudo ln -s /opt/julia-1.6.7/bin/julia /usr/local/bin/julia
+
+Step 6:
+Finally reopen a terminal window and run follownig command
+    $ julia
+  
